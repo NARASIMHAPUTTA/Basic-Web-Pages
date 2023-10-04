@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Portfolio</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: aqua;
+        color: white;
+        text-align: center;
+        padding: 2em;
+        position: relative;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 2em;
+      }
+
+      .card {
+        background-color: white;
+        padding: 2em;
+        margin: 1em;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>PUTTA LAKSHMI NARASIMHA MURTHY</h1>
+      <p>Web Developer</p>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm PUTTA LAKSHMI NARASIMHA MURTHY. I am a passionate web
+          developer with a love for coding and creating beautiful, responsive
+          websites.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Projects</h2>
+        <p>
+          I have done some projects and I am adding github profile to check it 
+          <p>Below is my github profile</p>
+          <a href ="https://github.com/NARASIMHAPUTTA">Github Profile</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Contact</h2>
+        <section>
+          <p>Contact Me:</p>
+
+          <p>📧 Email: narasimha@gmail.com</p>
+          <p>📞 Phone: +91 96********</p>
+          <p>📍 Address: 123 Main Street,AP,India</p>
+
+          <p>
+            Feel free to reach out with any inquiries or to discuss your web
+            development needs. We look forward to hearing from you!
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 PUTTA LAKSHMI NARASIMHA MURTHY</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card) => {
+          card.style.opacity = 1;
+        });
+      });
+    </script>
+  </body>
+</html>
